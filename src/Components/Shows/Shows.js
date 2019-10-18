@@ -43,9 +43,10 @@ class Shows extends React.Component{
                     {this.props.Shows.filter(this.runningShows).map(this.show)}
                 </div>}
                 {this.state.showShowMetaData && <div>
-                    <ShowMetaData metaDataa={this.state.metaData}/>
                     <div className='btnDiv'><button id='btn' onClick={this.mainPage}>Back to Main Page</button></div>
+                    <ShowMetaData metaDataa={this.state.metaData}/>
                 </div>}
+                <div id='signContainer'><div>Developed By <b>Faiz Ahmad Ansari</b></div></div>
             </div>
         )
     }

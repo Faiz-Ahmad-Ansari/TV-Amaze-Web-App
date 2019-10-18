@@ -71,3 +71,12 @@
     background-image: linear-gradient(to right,cadetBlue,black,cadetBlue);
     color: cadetblue;
 }
+#signContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signContainer>div{
+    margin: 2px;
+    padding: 2px;
+}
