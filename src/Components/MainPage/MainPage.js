@@ -12,7 +12,7 @@ class MainPage extends React.Component{
     componentDidMount(){
         let showID = [];
         for(let i = 1; i < 50; i++){
-            showID.push(fetch(`http://api.tvmaze.com/shows/${i}`).then(res=>res.json()
+            showID.push(fetch(`https://api.tvmaze.com/shows/${i}`).then(res=>res.json()
                 )
             )
         }
