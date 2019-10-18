@@ -1,0 +1,73 @@
+
+.showsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: cadetBlue;
+}
+
+.showsContainer > div{
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+    height: 300px;
+    flex: 23%;
+    text-align: center;
+    margin: 10px;
+    color: white;
+
+   
+}
+.showsContainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.imgShows{
+    width: 200px;
+    height: 250px;
+}
+#showName{
+    background-color:cadetblue ;
+    width: 70%;
+    border-radius: 50px;
+    padding: 3px;
+    box-shadow: 1px 1px 3px white;
+    color: black;
+    font-weight: bold;
+}
+#showName:hover{
+    background-color: white;
+}
+.showMain{
+    background-color: cadetblue;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    width: 98%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    background-image: linear-gradient(to right,black,cadetBlue,black);
+    color: black;
+    font-weight: bold;
+}
+#btn:hover{
+    background-image: linear-gradient(to right,cadetBlue,black,cadetBlue);
+    color: cadetblue;
+}
+#btnShow{
+    background-image: linear-gradient(to right,cadetBlue,black,cadetBlue);
+    color: cadetblue;
+}
+#btnShow{
+    background-image: linear-gradient(to right,cadetBlue,black,cadetBlue);
+    color: cadetblue;
+}
