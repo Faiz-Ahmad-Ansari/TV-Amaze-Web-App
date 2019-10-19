@@ -4,6 +4,12 @@
     flex-wrap: wrap;
     align-content: space-between;
     background-color: cadetBlue;
+    animation: slideMe 2s ease;
+}
+
+@keyframes slideMe{
+    from{transform:translateX(-500px);}
+    to{transform: translateX(0px);}
 }
 
 .showsContainer > div{
