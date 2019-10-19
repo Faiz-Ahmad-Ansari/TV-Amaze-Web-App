@@ -35,17 +35,19 @@ class Shows extends React.Component{
     }
 
     runningShows = (activeShow) => activeShow.status === "Running"
-
+    
     render(){       
         return(
             <div className='showMain'>
-               {this.state.showShows && <div className='showsContainer'>
+               {this.state.showShows && 
+                 <div className='showsContainer'>
                     {this.props.Shows.filter(this.runningShows).map(this.show)}
-                </div>}
-                {this.state.showShowMetaData && <div>
-                    <div className='btnDiv'><button id='btn' onClick={this.mainPage}>Back to Main Page</button></div>
-                    <ShowMetaData metaDataa={this.state.metaData}/>
-                </div>}
+                 </div>}
+                {this.state.showShowMetaData && 
+                    <div>
+                        <div className='btnDiv'><button id='btn' onClick={this.mainPage}>Back to Main Page</button></div>
+                        <ShowMetaData metaDataa={this.state.metaData}/>
+                    </div>}
                 <div id='signContainer'><div>Developed By <b>Faiz Ahmad Ansari</b></div></div>
             </div>
         )

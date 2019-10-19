@@ -10,19 +10,13 @@ class MainPage extends React.Component{
         }
     }
     componentDidMount(){
-        let showID = [];
-        for(let i = 1; i < 50; i++){
-            showID.push(fetch(`https://api.tvmaze.com/shows/${i}`).then(res=>res.json()
-                )
-            )
-        }
-
-    Promise.all(showID)
+        
+        fetch('https://api.tvmaze.com/shows')
+        .then(res=>res.json())
         .then(data => {
-            console.log(data)
             this.setState({Shows:data})
+            console.log(data)
         })
-        .catch(console.log)
     }
 
     render(){
