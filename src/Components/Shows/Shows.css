@@ -60,8 +60,8 @@
     font-weight: bold;
 }
 #btn:hover{
-    background-image: linear-gradient(to right,cadetBlue,black,cadetBlue);
-    color: cadetblue;
+    background-image: linear-gradient(to right,white,cadetBlue,white);
+    color: black;
 }
 #btnShow{
     background-image: linear-gradient(to right,cadetBlue,black,cadetBlue);

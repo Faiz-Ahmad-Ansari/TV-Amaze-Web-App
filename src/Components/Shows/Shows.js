@@ -24,7 +24,7 @@ class Shows extends React.Component{
     show = (show) => {
         return(
             <div className='showsContainer2' key={show.id}>
-                <div><img className='imgShows' src={show.image.medium} /></div>
+                <div><img alt={show.name} className='imgShows' src={show.image.medium} /></div>
                 <div onClick={this.metaData} id='showName'>{show.name}</div>
             </div>
             )}

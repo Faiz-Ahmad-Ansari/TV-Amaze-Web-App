@@ -2,10 +2,6 @@ import React from 'react';
 import '../ShowMetaData/ShowMetaData.css';
 
 class ShowMetaData extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {}
-    }
 
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -17,15 +13,15 @@ class ShowMetaData extends React.Component{
                 {this.props.metaDataa.map(m=>{
                     return(
                         <div className='metaDataContainer' key={m.id}>
-                            <div><img id='imgMetaData' src={m.image.original} /></div>
+                            <div><img alt={m.name} id='imgMetaData' src={m.image.original} /></div>
                             <div className='metaDataContainer2'>
-                                <div>Title : {m.name}</div>
-                                <div>Summary :{m.summary}</div>
-                                <div>Genres : {m.genres}</div>
-                                <div>Language : {m.language}</div>
-                                <div>Runtime : {m.runtime}</div>
-                                <div>Rating : {m.rating.average}</div>
-                                <div>URL :<a href={m.url}>{m.url}</a></div>
+                                <div><b>Title</b>    : {m.name}</div>
+                                <div><b>Summary</b>  : {m.summary}</div>
+                                <div><b>Genres</b>   : {m.genres}</div>
+                                <div><b>Language</b> : {m.language}</div>
+                                <div><b>Runtime</b>  : {m.runtime}</div>
+                                <div><b>Rating</b>   : {m.rating.average}</div>
+                                <div><b>URL</b> :<a href={m.url}>{m.url}</a></div>
                             </div>
                         </div>
                         )}
