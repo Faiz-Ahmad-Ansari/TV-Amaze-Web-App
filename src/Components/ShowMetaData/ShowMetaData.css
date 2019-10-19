@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: cadetblue;
-    animation: slideMe 2s ease;
+    animation: slideMe 3s ease;
 }
 
 @keyframes slideMe{
@@ -44,5 +44,11 @@
 @media only screen and (max-width: 600px){
     .metaDataContainer{
         flex-direction: column;
+        animation: slideMe 3s ease;
+    }
+
+@keyframes slideMe{
+        from{transform:translateY(-500px);}
+        to{transform: translateY(0px);}
     }
 }

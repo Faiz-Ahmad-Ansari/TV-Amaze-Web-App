@@ -13,10 +13,7 @@
     height: 300px;
     flex: 23%;
     text-align: center;
-    margin: 10px;
-    color: white;
-
-   
+    margin: 10px;  
 }
 .showsContainer2{
     display: flex;
